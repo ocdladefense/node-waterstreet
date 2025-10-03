@@ -1,0 +1,3 @@
+[submodule "dev_modules/@ocdla/lib-http"]
+	path = dev_modules/@ocdla/lib-http
+	url = https://github.com/ocdladefense/node-lib-http
