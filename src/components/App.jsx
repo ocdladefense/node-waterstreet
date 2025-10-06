@@ -6,8 +6,6 @@ import User from '../js/models/User.js';
 import Video from '../js/models/Video.js';
 import SalesforceRestApi from '@ocdla/salesforce/SalesforceRestApi.js';
 import { getCookie } from '@ocdla/salesforce/CookieUtils.js';
-import WatchedVideoService from '../js/services/WatchedVideoService.js'
-import PurchasedVideoService from '../js/services/PurchasedVideoService.js'
 import VideoDataParser from "../js/controllers/VideoDataParser.js";
 import Cache from '../js/controllers/Cache.js';
 import { YouTubeData, getThumbs, getDurations } from '../js/controllers/YouTubeData.js';
@@ -152,7 +150,7 @@ export default function App() {
     return (
         <>
             <Header loggedIn={isLoggedIn()} />
-            <div className="mx-auto">
+            <div className="mx-auto pt-4">
                 {!parser.isInitialized() ? <h1>My splash screen</h1> : <Outlet context={{ parser, user }} />}
             </div>
             <Footer />
